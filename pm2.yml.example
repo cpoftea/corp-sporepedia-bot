@@ -1,0 +1,13 @@
+apps:
+  - script: ./dist/main.js
+    name: discord-bot
+    env:
+      WEBHOOK_ID: '218873485374384354'
+      WEBHOOK_TOKEN: ajh4a5_erkejwfbdsfuhre-dshb4r3jdjfgbdfhgwkwkJefhbrfWHvfEfsnnJEjsfdnn
+      SERVER: https://spore-cr.ucoz.com/
+      TIMEOUT: 5000
+      INTERVAL: 300000
+    autorestart: true
+    error_file: ./debug.log
+    out_file: ./debug.log
+    combine_logs: true
