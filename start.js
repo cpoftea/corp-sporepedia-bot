@@ -1,7 +1,7 @@
-import * as timestampBound from './lib/timestamp-bound';
-import * as Sporepedia from './lib/sporepedia';
-import * as Discord from './lib/discord';
-import { handleError } from './lib/error-handler';
+import * as timestampBound from './lib/timestamp-bound.js';
+import * as Sporepedia from './lib/sporepedia.js';
+import * as Discord from './lib/discord.js';
+import { handleError } from './lib/error-handler.js';
 import log from 'fancy-log';
 
 const INTERVAL = process.env.INTERVAL || 60000;
@@ -107,3 +107,7 @@ Sporepedia.events.on(Sporepedia.EVENT_ERROR, (response) => {
 
 log.info('Starting...');
 req();
+
+process.on('SIGINT', function() {
+  process.exit(1);
+});

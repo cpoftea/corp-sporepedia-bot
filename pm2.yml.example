@@ -1,6 +1,7 @@
 apps:
-  - script: ./dist/main.js
-    name: discord-bot
+  - name: discord-bot
+    script: node
+    args: '-r esm start.js'
     env:
       WEBHOOK_ID: '218873485374384354'
       WEBHOOK_TOKEN: ajh4a5_erkejwfbdsfuhre-dshb4r3jdjfgbdfhgwkwkJefhbrfWHvfEfsnnJEjsfdnn
