@@ -4,3 +4,4 @@ node_modules
 *.tgz
 pm2.yml
 timestamp.txt
+.vscode/

@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "corp-sp-bot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "start": "pm2 start pm2.yml",
     "test": "echo \"Error: no test specified\" && exit 1"

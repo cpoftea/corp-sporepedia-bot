@@ -1,6 +1,6 @@
 ### Requrements
 
-* `node ^12.x`
+* `node ^14.x`
 * `pm2` process manager
 
 ### Installation
