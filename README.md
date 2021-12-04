@@ -1,6 +1,6 @@
 ### Requrements
 
-* `node ^14.x`
+* `node ^16.x`
 
 ### Installation
 
