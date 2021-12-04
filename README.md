@@ -9,4 +9,4 @@
 
 ### Start
 
-Run `node -r esm start.js`
+Run `node start.mjs`
