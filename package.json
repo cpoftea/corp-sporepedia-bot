@@ -1,13 +1,13 @@
 {
   "private": true,
   "name": "corp-sp-bot",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "scripts": {
-    "start": "pm2 start pm2.yml",
+    "start": "node start.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "^14"
+    "node": "^16"
   },
   "os": [
     "linux"
@@ -16,11 +16,11 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "discord.js": "^12.5.1",
+    "discord.js": "^13.3.1",
     "esm": "^3.2.25",
     "fancy-log": "^1.3.3",
     "he": "^1.2.0",
     "ramda": "^0.27.1",
-    "xmlbuilder2": "^2.4.0"
+    "xmlbuilder2": "^3.0.2"
   }
 }

@@ -1,7 +1,7 @@
-FROM node:14-alpine
+FROM node:16-alpine
 
 WORKDIR /node/app
 COPY . .
 RUN npm ci
 USER node
-CMD ["node", "-r", "esm", "start.js"]
+CMD ["node", "start.mjs"]
