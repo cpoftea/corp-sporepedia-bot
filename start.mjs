@@ -3,12 +3,11 @@ import * as Sporepedia from './lib/sporepedia.mjs';
 import * as Discord from './lib/discord.mjs';
 import { handleError } from './lib/error-handler.mjs';
 import log from 'fancy-log';
-
-const INTERVAL = process.env.INTERVAL || 60000;
+import { interval } from './lib/config.mjs';
 
 const postponeNextJob = () => {
   log.info('Next job is postponed');
-  setTimeout(req, INTERVAL);
+  setTimeout(req, interval);
 }
 
 function sortByDescTimestamp(entryA, entryB) {
