@@ -5,3 +5,4 @@ node_modules
 pm2.yml
 timestamp.txt
 .vscode/
+.env
